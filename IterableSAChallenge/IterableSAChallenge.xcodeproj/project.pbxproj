@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,7 @@
 		F7F9423A267EBE5700D9D905 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7F94239267EBE5700D9D905 /* Assets.xcassets */; };
 		F7F9423D267EBE5700D9D905 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7F9423C267EBE5700D9D905 /* Preview Assets.xcassets */; };
 		F7F94240267EBE5700D9D905 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7F9423E267EBE5700D9D905 /* LaunchScreen.storyboard */; };
+		F7F94249267ECA5A00D9D905 /* IterableSDK in Frameworks */ = {isa = PBXBuildFile; productRef = F7F94248267ECA5A00D9D905 /* IterableSDK */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F7F94249267ECA5A00D9D905 /* IterableSDK in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -91,6 +93,9 @@
 			dependencies = (
 			);
 			name = IterableSAChallenge;
+			packageProductDependencies = (
+				F7F94248267ECA5A00D9D905 /* IterableSDK */,
+			);
 			productName = IterableSAChallenge;
 			productReference = F7F94230267EBE5500D9D905 /* IterableSAChallenge.app */;
 			productType = "com.apple.product-type.application";
@@ -118,6 +123,9 @@
 				Base,
 			);
 			mainGroup = F7F94227267EBE5500D9D905;
+			packageReferences = (
+				F7F94247267ECA5A00D9D905 /* XCRemoteSwiftPackageReference "swift-sdk" */,
+			);
 			productRefGroup = F7F94231267EBE5500D9D905 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -345,6 +353,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F7F94247267ECA5A00D9D905 /* XCRemoteSwiftPackageReference "swift-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/iterable/swift-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.3.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F7F94248267ECA5A00D9D905 /* IterableSDK */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F7F94247267ECA5A00D9D905 /* XCRemoteSwiftPackageReference "swift-sdk" */;
+			productName = IterableSDK;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = F7F94228267EBE5500D9D905 /* Project object */;
 }
