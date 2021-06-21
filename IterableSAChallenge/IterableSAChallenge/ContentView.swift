@@ -9,8 +9,12 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        Button("Update User Information") {
+            IterableService.shared.updateInformationFor(currentUser)
+        }
+        .onAppear {
+            IterableService.shared.identifyUser(with: currentUser.email)
+        }
     }
 }
 

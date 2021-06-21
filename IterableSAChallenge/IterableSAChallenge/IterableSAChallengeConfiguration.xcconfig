@@ -1,0 +1,11 @@
+//
+//  IterableSAChallengeConfiguration.xcconfig
+//  IterableSAChallenge
+//
+//  Created by Bethany Bellio on 6/19/21.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+ITERABLE_API_KEY = 349dcc9373c74c6699c5d1204a271695

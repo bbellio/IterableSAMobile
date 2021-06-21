@@ -14,6 +14,8 @@
 		F7F9423D267EBE5700D9D905 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7F9423C267EBE5700D9D905 /* Preview Assets.xcassets */; };
 		F7F94240267EBE5700D9D905 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7F9423E267EBE5700D9D905 /* LaunchScreen.storyboard */; };
 		F7F94249267ECA5A00D9D905 /* IterableSDK in Frameworks */ = {isa = PBXBuildFile; productRef = F7F94248267ECA5A00D9D905 /* IterableSDK */; };
+		F7F9424B267ECB0B00D9D905 /* IterableService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7F9424A267ECB0B00D9D905 /* IterableService.swift */; };
+		F7F9424E267ED46300D9D905 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7F9424D267ED46300D9D905 /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +27,9 @@
 		F7F9423C267EBE5700D9D905 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F7F9423F267EBE5700D9D905 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F7F94241267EBE5700D9D905 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F7F9424A267ECB0B00D9D905 /* IterableService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IterableService.swift; sourceTree = "<group>"; };
+		F7F9424C267ECC1400D9D905 /* IterableSAChallengeConfiguration.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = IterableSAChallengeConfiguration.xcconfig; sourceTree = "<group>"; };
+		F7F9424D267ED46300D9D905 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +70,9 @@
 				F7F9423E267EBE5700D9D905 /* LaunchScreen.storyboard */,
 				F7F94241267EBE5700D9D905 /* Info.plist */,
 				F7F9423B267EBE5700D9D905 /* Preview Content */,
+				F7F9424A267ECB0B00D9D905 /* IterableService.swift */,
+				F7F9424D267ED46300D9D905 /* User.swift */,
+				F7F9424C267ECC1400D9D905 /* IterableSAChallengeConfiguration.xcconfig */,
 			);
 			path = IterableSAChallenge;
 			sourceTree = "<group>";
@@ -154,7 +162,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				F7F94234267EBE5500D9D905 /* AppDelegate.swift in Sources */,
+				F7F9424B267ECB0B00D9D905 /* IterableService.swift in Sources */,
 				F7F94236267EBE5500D9D905 /* SceneDelegate.swift in Sources */,
+				F7F9424E267ED46300D9D905 /* User.swift in Sources */,
 				F7F94238267EBE5500D9D905 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -175,6 +185,7 @@
 /* Begin XCBuildConfiguration section */
 		F7F94242267EBE5700D9D905 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F7F9424C267ECC1400D9D905 /* IterableSAChallengeConfiguration.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -236,6 +247,7 @@
 		};
 		F7F94243267EBE5700D9D905 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F7F9424C267ECC1400D9D905 /* IterableSAChallengeConfiguration.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -291,6 +303,7 @@
 		};
 		F7F94245267EBE5700D9D905 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F7F9424C267ECC1400D9D905 /* IterableSAChallengeConfiguration.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -312,6 +325,7 @@
 		};
 		F7F94246267EBE5700D9D905 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F7F9424C267ECC1400D9D905 /* IterableSAChallengeConfiguration.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
