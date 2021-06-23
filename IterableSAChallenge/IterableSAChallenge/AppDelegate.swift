@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import IterableSDK
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -29,6 +30,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
     }
 
-
+    func application(_ application: UIApplication, didReceiveRemoteNotification userInfo: [AnyHashable : Any], fetchCompletionHandler completionHandler: @escaping (UIBackgroundFetchResult) -> Void) {
+        IterableService.shared.receiveNotifications(application: application, userInfo: userInfo, completionHandler: completionHandler)
+    }
+    
 }
 

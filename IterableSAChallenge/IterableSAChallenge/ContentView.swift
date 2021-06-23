@@ -15,6 +15,12 @@ struct ContentView: View {
         .onAppear {
             IterableService.shared.identifyUser(with: currentUser.email)
         }
+        Button("Send Custom Event") {
+            IterableService.shared.sendCustomEvent(named: Constants.eventName, with: [ Constants.platform : Constants.iOS,
+                                                                                       Constants.isTestEvent : true,
+                                                                                       Constants.url : Constants.customURL,
+                                                                                       Constants.secretCodeKey : Constants.secretCodeValue  ])
+        }
     }
 }
 

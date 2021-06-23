@@ -36,20 +36,26 @@ class IterableService {
     }
     
     func updateInformationFor(_ user: User) {
-        let userInfo: [String : Any] = [ IterableConstants.firstName : user.firstName,
-                                         IterableConstants.isRegisteredUser: user.isRegisteredUser,
-                                         IterableConstants.saUserTestKey : user.key ]
+        let userInfo: [String : Any] = [ Constants.firstName : user.firstName,
+                                         Constants.isRegisteredUser: user.isRegisteredUser,
+                                         Constants.saUserTestKey : user.key ]
         IterableAPI.updateUser(userInfo, mergeNestedObjects: false) { _ in
             print("Successfully updated user information for user: \(user)")
         } onFailure: { reason, _ in
-            print("Iterable failed to update user information for user: \(user) with reason: \(reason ?? "no reason provided")")
+            print("Iterable failed to update user information for user: \(user) because of the following reason: \(reason ?? "no reason provided")")
         }
     }
     
-}
-
-private enum IterableConstants {
-    static let firstName = "firstName"
-    static let isRegisteredUser = "isRegisteredUser"
-    static let saUserTestKey = "SA_User_Test_Key"
+    func sendCustomEvent(named eventName: String, with data: [String : Any]) {
+        IterableAPI.track(event: eventName, dataFields: data) { _ in
+            print("Iterable successfully tracked \(eventName) event")
+        } onFailure: { reason, _ in
+            print("Iterable failed to track custom event: \(eventName) because of the following reason: \(reason ?? "no reason provided")")
+        }
+    }
+    
+    func receiveNotifications(application: UIApplication, userInfo: [AnyHashable : Any], completionHandler:  @escaping (UIBackgroundFetchResult) -> Void) {
+        IterableAppIntegration.application(application, didReceiveRemoteNotification: userInfo, fetchCompletionHandler: completionHandler)
+    }
+    
 }

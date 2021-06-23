@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F77EA3B5268166A400983277 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F77EA3B4268166A400983277 /* Constants.swift */; };
 		F7F94234267EBE5500D9D905 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7F94233267EBE5500D9D905 /* AppDelegate.swift */; };
 		F7F94236267EBE5500D9D905 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7F94235267EBE5500D9D905 /* SceneDelegate.swift */; };
 		F7F94238267EBE5500D9D905 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7F94237267EBE5500D9D905 /* ContentView.swift */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F77EA3B4268166A400983277 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		F7F94230267EBE5500D9D905 /* IterableSAChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IterableSAChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7F94233267EBE5500D9D905 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F7F94235267EBE5500D9D905 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -44,6 +46,50 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F77EA3B62682B64B00983277 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				F7F9423E267EBE5700D9D905 /* LaunchScreen.storyboard */,
+				F7F94237267EBE5500D9D905 /* ContentView.swift */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
+		F77EA3B72682B65F00983277 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F7F9424D267ED46300D9D905 /* User.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		F77EA3B92682B67300983277 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				F7F9424A267ECB0B00D9D905 /* IterableService.swift */,
+			);
+			name = Service;
+			sourceTree = "<group>";
+		};
+		F77EA3BA2682B67D00983277 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F7F9424C267ECC1400D9D905 /* IterableSAChallengeConfiguration.xcconfig */,
+				F7F94241267EBE5700D9D905 /* Info.plist */,
+				F7F94239267EBE5700D9D905 /* Assets.xcassets */,
+				F7F9423B267EBE5700D9D905 /* Preview Content */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		F77EA3BB2682B72F00983277 /* Strings */ = {
+			isa = PBXGroup;
+			children = (
+				F77EA3B4268166A400983277 /* Constants.swift */,
+			);
+			name = Strings;
+			sourceTree = "<group>";
+		};
 		F7F94227267EBE5500D9D905 = {
 			isa = PBXGroup;
 			children = (
@@ -63,16 +109,13 @@
 		F7F94232267EBE5500D9D905 /* IterableSAChallenge */ = {
 			isa = PBXGroup;
 			children = (
+				F77EA3BA2682B67D00983277 /* Resources */,
+				F77EA3B92682B67300983277 /* Service */,
+				F77EA3B72682B65F00983277 /* Model */,
+				F77EA3B62682B64B00983277 /* UI */,
+				F77EA3BB2682B72F00983277 /* Strings */,
 				F7F94233267EBE5500D9D905 /* AppDelegate.swift */,
 				F7F94235267EBE5500D9D905 /* SceneDelegate.swift */,
-				F7F94237267EBE5500D9D905 /* ContentView.swift */,
-				F7F94239267EBE5700D9D905 /* Assets.xcassets */,
-				F7F9423E267EBE5700D9D905 /* LaunchScreen.storyboard */,
-				F7F94241267EBE5700D9D905 /* Info.plist */,
-				F7F9423B267EBE5700D9D905 /* Preview Content */,
-				F7F9424A267ECB0B00D9D905 /* IterableService.swift */,
-				F7F9424D267ED46300D9D905 /* User.swift */,
-				F7F9424C267ECC1400D9D905 /* IterableSAChallengeConfiguration.xcconfig */,
 			);
 			path = IterableSAChallenge;
 			sourceTree = "<group>";
@@ -166,6 +209,7 @@
 				F7F94236267EBE5500D9D905 /* SceneDelegate.swift in Sources */,
 				F7F9424E267ED46300D9D905 /* User.swift in Sources */,
 				F7F94238267EBE5500D9D905 /* ContentView.swift in Sources */,
+				F77EA3B5268166A400983277 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
